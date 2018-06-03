@@ -1,0 +1,82 @@
+/* Universal Rulesets */
+html {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: azure;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h5 {
+  font-weight: bold;
+}
+
+/* Banner Ruleset */
+.banner {
+  height: 30rem;
+  width: 100%;
+  background: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* Header Ruleset */
+header {
+  position: relative;
+  top: 1rem;
+  background-color: cadetblue;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  flex-grow: 1;
+  color: white;
+  align-items: center;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* Navigation Ruleset */
+.navigation {
+  display: flex;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+.mobile-navigation {
+  display: none;
+}
+
+/* Headline Ruleset */
+.headline {
+  position: relative;
+  top: 10rem;
+  right: -2rem;
+  float: right;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
