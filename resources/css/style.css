@@ -80,3 +80,32 @@ li {
   font-size: 2rem;
   line-height: 1.2;
 }
+
+/* Services  Ruleset */
+.services {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.service {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+  width: 5rem;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.img-container img {
+  max-width: 4.5rem;
+}
