@@ -109,3 +109,43 @@ li {
 .img-container img {
   max-width: 4.5rem;
 }
+
+/* Business Info Ruleset */
+.business-info {
+  display: flex;
+}
+
+.info {
+  display: flex;
+  flex-flow: column;
+  width: 35%;
+  margin-right: 5%;
+}
+
+.title {
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  color: white;
+}
+
+.description {
+  margin-top: 1rem;
+}
+
+/* Footer Ruleset */
+footer {
+  margin-top: 5rem;
+  padding: 4rem;
+}
+
+.logo-black {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.logo-black img {
+  margin-right: 1rem;
+  height: 1.5rem;
+}
