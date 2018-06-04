@@ -107,7 +107,7 @@ li {
 }
 
 .img-container img {
-  max-width: 4.5rem;
+  max-width: 5rem;
 }
 
 /* Business Info Ruleset */
@@ -148,4 +148,163 @@ footer {
 .logo-black img {
   margin-right: 1rem;
   height: 1.5rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  /* For most tablet sized screens */
+
+  /* Universal Changes */
+  .container {
+    max-width: 100%;
+  }
+
+  /* Banner Changes */
+
+  .banner {
+    height: 22rem;
+  }
+
+  header {
+    position: static;
+  }
+
+  /* Headline Changes */
+  .headline {
+    top: 5rem;
+    right: 2rem;
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+  /* business-info Changes */
+  .business-info {
+    margin-left: 2.5rem;
+  }
+
+  /* Footer Changes */
+  .logo-black {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  /* For most mobile sized screens */
+
+  /* Banner Changes */
+  .banner {
+    background-position: 20%;
+    height: 17rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  .headline {
+    top: 9rem;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  /* Navigation Changes with added dropdown menu */
+  .navigation {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: list-item;
+  }
+
+  li {
+    display: block;
+    position: relative;
+    transition-duration: 0.5s;
+    background-color: cadetblue;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  li:hover {
+    background-color: lightblue;
+    cursor: pointer;
+  }
+
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    display: none;
+    transition: all 0.5s ease;
+  }
+
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+
+  ul li ul li {
+    clear: both;
+    width: 100%;
+    padding: 0.75rem;
+    border-top: 1px solid black;
+  }
+
+  /* Services Changes */
+  .services {
+    margin: 3.77rem 0;
+    flex-flow: column;
+    align-items: center;
+  }
+
+  .service {
+    margin: 1.54rem 0;
+    font-size: 0.77rem;
+  }
+
+  .service span {
+    margin-top: -5rem;
+  }
+
+  /* business-info Changes */
+  .business-info {
+    flex-flow: column;
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .info {
+    width: 100%;
+    margin: 0;
+  }
+
+  .title {
+    width: 89%;
+  }
+
+  .description {
+    font-size: 0.77rem;
+    max-width: 100%;
+    padding: 0 1rem;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+  }
+
+  /* Footer Changes */
+  .logo-black {
+    justify-content: center;
+  }
+
+  .logo-black span {
+    display: none;
+  }
 }
